@@ -18,7 +18,7 @@
   main { max-width: 1100px; margin: 0 auto; padding: 48px 16px 56px; }
   h1 { font-size: clamp(30px, 5vw, 46px); font-weight: 800; letter-spacing: -1px; margin: 0 0 8px; }
   .lead { color: var(--muted); font-size: clamp(16px, 2.2vw, 19px); margin: 0 0 32px; max-width: 760px; line-height: 1.5; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 22px; }
   a.card { display: block; text-decoration: none; color: inherit; background: var(--card); border: 1px solid var(--line);
            border-radius: 16px; overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
   a.card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,.12); }
