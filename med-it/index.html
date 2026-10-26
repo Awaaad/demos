@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Med-IT Pharmacy ERP</title>
+<meta name="description" content="Med-IT: a pharmacy ERP built with Spring Boot, Angular and Ionic, by Awad Luckhoo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #f5f8f6; --ink: #0d1b14; --muted: #5b6b62; --card: #ffffff; --line: #dbe5df; --green: #0b8a3e; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #0c1611; --ink: #e8f1ec; --muted: #9db0a5; --card: #13211a; --line: #24362c; --green: #3ccf75; }
+  }
+  :root[data-theme="dark"] { --bg: #0c1611; --ink: #e8f1ec; --muted: #9db0a5; --card: #13211a; --line: #24362c; --green: #3ccf75; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 'Segoe UI', Roboto, Arial, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 40px 16px 56px; }
+  h1 { font-size: clamp(30px, 5vw, 48px); font-weight: 800; letter-spacing: -1px; margin: 0 0 6px; }
+  .lead { color: var(--muted); font-size: clamp(16px, 2.2vw, 20px); margin: 0 0 26px; }
+  .player { background: #000; border-radius: 16px; overflow: hidden; border: 1px solid var(--line);
+            box-shadow: 0 20px 50px rgba(0,0,0,.18); aspect-ratio: 16 / 9; }
+  video { width: 100%; height: 100%; display: block; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 30px; }
+  .chip { border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 8px 16px; font-weight: 600; font-size: 15px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  .card h2 { font-size: 17px; margin: 0 0 6px; }
+  .card p { margin: 0; color: var(--muted); line-height: 1.5; font-size: 15px; }
+  .card.wide { grid-column: 1 / -1; border-color: var(--green); }
+  .tagline { font-weight: 800; font-size: clamp(20px, 3vw, 26px); margin: 0 0 18px; }
+  .tagline span { color: var(--green); }
+  footer { margin-top: 34px; color: var(--muted); font-size: 15px; }
+  footer a { color: var(--green); font-weight: 600; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Med-IT · Pharmacy ERP</h1>
+  <p class="lead">A 2-minute tour of a real pharmacy ERP, in daily use for over five years. Built and maintained by Awad Luckhoo.</p>
+  <div class="player">
+    <video controls playsinline preload="metadata" poster="poster.jpg" src="demo.mp4"></video>
+  </div>
+  <div class="meta">
+    <span class="chip">In daily use for 5+ years</span>
+    <span class="chip">Spring Boot 3 · Java</span>
+    <span class="chip">Angular + Ionic</span>
+    <span class="chip">MySQL · Flyway</span>
+    <span class="chip">JWT security</span>
+    <span class="chip">AI-assisted code review</span>
+  </div>
+  <p class="tagline">From the counter to compliance, <span>one system.</span></p>
+  <div class="grid">
+    <div class="card wide"><h2>Fast, safe dispensing</h2><p>Keyboard-first checkout that sells from each stock batch, with optional discounts and split payments. Controlled drugs require a prescription, so the doctor and patient are attached to the sale, and every sale prints a tax invoice and a receipt.</p></div>
+    <div class="card"><h2>Batch &amp; expiry control</h2><p>Deliveries are received per supplier with bonus, cost, price and expiry. Each becomes its own batch, and the dashboard flags low stock and expired batches.</p></div>
+    <div class="card"><h2>Compliance built in</h2><p>The psychotropic register fills itself from sales, VAT reports export in one click, and each till is reconciled against expected cash at closing.</p></div>
+    <div class="card"><h2>Credit customers</h2><p>Customers buy on account and settle in full or in part, with an agreed discount when needed.</p></div>
+    <div class="card"><h2>Roles &amp; security</h2><p>Token-based sign-in. Admins see the full back office; dispensers see only the counter.</p></div>
+    <div class="card"><h2>Every screen</h2><p>One Angular and Ionic app on desktop, tablet and phone.</p></div>
+    <div class="card"><h2>AI-assisted review</h2><p>A recent AI-assisted code review uncovered and fixed hidden bugs and added new features to a system already in production.</p></div>
+  </div>
+  <footer>Awad Luckhoo · <a href="mailto:awad.luckhoo.al@gmail.com">awad.luckhoo.al@gmail.com</a> · +230 5806 9162<br>
+  Demo recorded on a copy of the database with every person's name replaced by a fictional one. Narration: AI voice.</footer>
+</main>
+</body>
+</html>

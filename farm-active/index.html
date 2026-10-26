@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farm Active ERP</title>
+<meta name="description" content="Farm Active: a poultry and farm ERP built with Spring Boot, Angular, Ionic and Capacitor, by Awad Luckhoo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #fff4ef; --ink: #212529; --muted: #6b7280; --card: #ffffff; --line: #f3c9b8; --accent: #ec4218; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #1a0f0b; --ink: #f6ece7; --muted: #c4a89c; --card: #26160f; --line: #4a2a1d; --accent: #ff6a3d; }
+  }
+  :root[data-theme="dark"] { --bg: #1a0f0b; --ink: #f6ece7; --muted: #c4a89c; --card: #26160f; --line: #4a2a1d; --accent: #ff6a3d; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Open Sans', 'Segoe UI', Roboto, Arial, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 40px 16px 56px; }
+  h1 { font-family: Raleway, 'Segoe UI', sans-serif; font-size: clamp(30px, 5vw, 48px); font-weight: 800; letter-spacing: -1px; margin: 0 0 6px; }
+  h1 span { color: var(--accent); }
+  .lead { color: var(--muted); font-size: clamp(16px, 2.2vw, 20px); margin: 0 0 26px; }
+  .player { background: #000; border-radius: 16px; overflow: hidden; border: 1px solid var(--line);
+            box-shadow: 0 20px 50px rgba(236,66,24,.18); aspect-ratio: 16 / 9; }
+  video { width: 100%; height: 100%; display: block; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 30px; }
+  .chip { border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 8px 16px; font-weight: 600; font-size: 15px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  .card h2 { font-family: Raleway, sans-serif; font-size: 18px; margin: 0 0 6px; }
+  .card p { margin: 0; color: var(--muted); line-height: 1.5; font-size: 15px; }
+  .card.wide { grid-column: 1 / -1; border-color: var(--accent); }
+  .tagline { font-family: Raleway, 'Segoe UI', sans-serif; font-weight: 800; font-size: clamp(20px, 3vw, 26px); margin: 0 0 18px; }
+  .tagline span { color: var(--accent); }
+  footer { margin-top: 34px; color: var(--muted); font-size: 15px; }
+  footer a { color: var(--accent); font-weight: 600; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Farm <span>Active</span> · Poultry &amp; Farm ERP</h1>
+  <p class="lead">A 4-minute tour of a real ERP, in daily use by a poultry company in Indonesia. Built by Awad Luckhoo.</p>
+  <div class="player">
+    <video controls playsinline preload="metadata" poster="poster.jpg" src="demo.mp4"></video>
+  </div>
+  <div class="meta">
+    <span class="chip">Multi-tenant</span>
+    <span class="chip">Integrated accounting</span>
+    <span class="chip">Spring Boot · Java</span>
+    <span class="chip">Angular · Ionic · Capacitor</span>
+    <span class="chip">MySQL</span>
+    <span class="chip">JWT · 12 roles</span>
+    <span class="chip">English / Bahasa Indonesia</span>
+  </div>
+  <p class="tagline">Born on the farm. <span>Built for any business.</span></p>
+  <div class="grid">
+    <div class="card wide"><h2>Integrated accounting</h2><p>Every sale, purchase, return, transfer and payment posts its own double-entry journal, with no bookkeeping by hand. Chart of accounts, monthly balances, a trial balance with period lock, profit and loss, a balance sheet that always balances, cash flow, receivables and payables ageing, and bank reconciliation with auto-match.</p></div>
+    <div class="card"><h2>Multi-tenant, multi-site</h2><p>Every company and every site keeps its own data on one platform. Staff sign in once, choose their site, and 12 roles each see only what they need.</p></div>
+    <div class="card"><h2>Sell anything, on credit too</h2><p>A point of sale for eggs, chickens, feed and every material, with PDF invoices. Returns against the original invoice, customer deposits, buy now and pay later, and account settlements for customers and suppliers.</p></div>
+    <div class="card"><h2>Flocks &amp; production</h2><p>Register flocks, drag them into houses and move them as birds mature. Daily house surveys feed the daily report and the egg report.</p></div>
+    <div class="card"><h2>Product assembly</h2><p>A factory makes its own goods, from milled feed to any other product, with every cost traced down to the cost of each egg.</p></div>
+    <div class="card"><h2>One codebase, every screen</h2><p>Web, tablet and phone from a single Angular, Ionic and Capacitor app, in English or Bahasa Indonesia at one click.</p></div>
+    <div class="card"><h2>AI-assisted review</h2><p>A recent AI-assisted code review added deeper quality checks, fixed hidden issues and brought new features.</p></div>
+  </div>
+  <footer>Awad Luckhoo · <a href="mailto:awad.luckhoo.al@gmail.com">awad.luckhoo.al@gmail.com</a> · +230 5806 9162<br>
+  Demo recorded on a fictional dataset (invented farms, staff, customers and suppliers). Narration: AI voice.</footer>
+</main>
+</body>
+</html>
